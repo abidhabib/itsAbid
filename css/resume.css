@@ -54,8 +54,8 @@ p.lead {
   height: 3.5rem;
   width: 3.5rem;
 
-  background: radial-gradient(circle, rgba(98,103,103,1) 0%, rgba(2,84,82,0.9920343137254902) 100%);
-  
+  background: radial-gradient(square,#2fb2e1) 100%);
+   background: rgb(2,0,36);
  
 
   color: rgb(0, 0, 0) !important;

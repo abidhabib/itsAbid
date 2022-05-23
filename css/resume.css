@@ -66,8 +66,8 @@ p.lead {
    animation: mymove 5s infinite
 }
 @keyframes mymove {
-  from {background-color: red;}
-  to {background-color: blue;}
+  from {background-color: #30bbe4;}
+  to {background-color: #4000bf;}
 }
 
 .social-icons a:last-child {

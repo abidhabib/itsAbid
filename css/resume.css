@@ -63,6 +63,11 @@ p.lead {
   font-size: 1.5rem;
   line-height: 3.5rem;
   margin-right: 1rem;
+   animation: mymove 5s infinite
+}
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
 }
 
 .social-icons a:last-child {

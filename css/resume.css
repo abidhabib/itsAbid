@@ -25,8 +25,7 @@ h6 {
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -105,12 +104,12 @@ p.lead {
   }
   
   
-/*   Mobiel */
-  @media (max-width: 514px){
+  @media (min-width: 414px){
   h1 {
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size:6rem !important;
+  color: blue;
 }
+
   }
   
   

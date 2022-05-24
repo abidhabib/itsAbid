@@ -103,6 +103,20 @@ p.lead {
     width: 17rem;
     height: 100vh;
   }
+  
+  
+/*   Mobiel */
+  @media (min-width: 992px){
+  h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+  }
+  
+  
+  
+  
+  
   #sideNav .navbar-brand {
     display: flex;
     margin: auto auto 0;

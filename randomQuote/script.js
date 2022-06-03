@@ -16,10 +16,7 @@ const randomq1=()=>{
     aname.innerText=result.author;
 })}
 
-const random2=async()=>{
-    const data=await fetch(api)
-    
-}
+
 
 quoteBtn.addEventListener('click',randomq1)
 copy=addEventListener('click',()=>{

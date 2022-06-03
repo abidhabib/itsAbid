@@ -2,14 +2,28 @@
 
 
 
- const quote=document.querySelector('.quote'),
-quoteBtn=document.querySelector("#btnc");
-aname=document.querySelector('.name')
-function  randomq(){
-fetch("http://api.quotable.io/random").then(res =>res.json()).then(result =>{
-quote.innerText=result.content;
-aname.innerText=result.author;
+ const quote=document.querySelector('.quote');
 
-})
+const quoteBtn=document.querySelector("#btnc");
+const aname=document.querySelector('.name'),
+sound=document.querySelector('.sound')
+
+const api="http://api.quotable.io/random"
+
+const randomq1=()=>{
+    fetch("http://api.quotable.io/random").then(res =>res.json()).then(result =>{
+    quote.innerText=result.content;
+    aname.innerText=result.author;
+})}
+
+const random2=async()=>{
+    const data=await fetch(api)
+    
 }
-quoteBtn.addEventListener('click',randomq)
+
+quoteBtn.addEventListener('click',randomq1)
+copy=addEventListener('click',()=>{
+   var copyText=quote;
+navigator.clipboard.writeText( quote.innerText);
+("Copied")
+})

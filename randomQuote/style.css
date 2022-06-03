@@ -152,5 +152,9 @@ hr{
     @media only screen and (max-width: 600px) {
        .warper {
 margin: 12px;     }
+        body {
+   height: 100%;
+   overflow-y: hidden;
+}
       }
  

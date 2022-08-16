@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  padding-top: 44px;
+  padding-top: 40px;
   background:radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
@@ -62,7 +62,7 @@ p.lead {
 }
 @keyframes mymove {
   from {background-color: #30bbe4;}
-  to {background-color: #4000bf;}
+  to {background-color: #a59ab9;}
 }
 
 .social-icons a:last-child {
@@ -78,7 +78,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(65, 51, 51);
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -185,4 +185,39 @@ a {
 
 a:hover, a:focus, a:active {
   color: #000000;
+}
+
+.skills_box{  
+  width: 100%;
+  list-style: none;
+  display: flex;
+
+}
+
+.myimg{
+padding: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  box-shadow: rgb(255, 250, 250) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.5) -3px -3px 6px 1px inset;
+margin-left: 60px;
+}
+
+@media (max-width: 768px) {
+.skills_box{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.myimg{
+  margin: 50px;
+  padding: 30px;
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+display: flex;  
+justify-content: center;  box-shadow: rgb(255, 250, 250) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.5) -3px -3px 6px 1px inset;
+
+  }
+
 }

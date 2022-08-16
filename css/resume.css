@@ -205,11 +205,8 @@ margin-left: 60px;
 
 @media (max-width: 768px) {
 .skills_box{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin: auto;
+  display: flex;
+display: block;
 
 }
 .myimg{
@@ -217,11 +214,7 @@ margin: auto;
   padding: 30px;
     width: 250px;
     height: 250px;
-    border-radius: 15px;
-display: flex;  
-justify-content: center; 
-align-items: center; box-shadow: rgb(255, 250, 250) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.5) -3px -3px 6px 1px inset;
-
+  
   }
 
 }

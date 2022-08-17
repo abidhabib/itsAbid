@@ -188,7 +188,7 @@ a:hover, a:focus, a:active {
 }
 
 .skills_box{  
-  width: 100%;
+  width: auto;
   list-style: none;
   display: flex;
 
@@ -203,17 +203,22 @@ padding: 30px;
 margin-left: 60px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 .skills_box{
   display: flex;
-display: block;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
 
+align-items: center;
+right: 0px;
+padding: 10px;
 }
 .myimg{
   margin: 20px;
   padding: 30px;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   
   }
 

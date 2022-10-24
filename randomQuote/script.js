@@ -11,7 +11,7 @@ sound=document.querySelector('.sound')
 const api="http://api.quotable.io/random"
 
 const randomq1=()=>{
-    fetch("http://api.quotable.io/random").then(res =>res.json()).then(result =>{
+    fetch("https://api.quotable.io/random").then(res =>res.json()).then(result =>{
     quote.innerText=result.content;
     aname.innerText=result.author;
 })}

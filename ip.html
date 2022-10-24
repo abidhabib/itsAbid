@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+</head>
+<body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+    body{
+        
+        height: 100vh;
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: black;
+  margin: 0 0.5rem;
+
+  animation: bounce;
+  animation-duration: 2s; 
+    }
+    #ipid{
+        color: rgb(14, 250, 65);
+        font-family: 'Fira Sans', sans-serif;    }
+</style>
+    <h1 id="ipid">
+        111
+    </h1>
+
+
+    <script>
+        const ipd=document.getElementById("ipid")
+      const ipf=()=>{
+        fetch('https://api.ipify.org/?format=json').then(result => result.json()).then(result=>{
+            console.log(result);
+            ipd.innerText=result.ip
+        })
+      }
+      ipf()
+    </script>
+</body>
+</html>
